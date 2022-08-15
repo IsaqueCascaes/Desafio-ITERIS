@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 
+
 const CardDetails = ({ urlDetails }) => {
     useEffect(() => {
         console.log(urlDetails)
@@ -13,7 +14,7 @@ const CardDetails = ({ urlDetails }) => {
             </div>
 
             <div className="CardDetails-items">
-                <h2>o</h2>
+                <h2>{urlDetails}</h2>
                 <p></p>
                 <ul>
                     <li>HP - 999</li>
