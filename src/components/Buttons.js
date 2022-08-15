@@ -9,5 +9,4 @@ const Buttons = ({setUrl, next, preview}) => {
     </div>
     );
 };
-
 export default Buttons;
