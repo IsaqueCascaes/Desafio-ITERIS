@@ -1,28 +1,62 @@
-import { useEffect } from "react";
+import { type } from "@testing-library/user-event/dist/type";
+import { useEffect, useState } from "react";
 
 
 const CardDetails = ({ urlDetails }) => {
+
+    const [detailsPokemons, setDetailsPokemons] = useState(null)
+    const [isPikachu, setIsPikachu] = useState(false)
+
     useEffect(() => {
-        console.log(urlDetails)
+        const fetchDataDetails = async () => {
+            const resultDetails = await fetch(urlDetails)
+                .then(response => response.json())
+                .then(data => (data))
+            setDetailsPokemons(resultDetails)
+            console.log(resultDetails)
+        }
+
+        fetchDataDetails()
     }, [urlDetails])
+
+    useEffect(() => {
+        if (
+            detailsPokemons?.name === "pikachu") {
+            setIsPikachu(true)
+        } else {
+            setIsPikachu(false)
+        }
+    }, [detailsPokemons])
 
     return (
 
-        <div className="CardDetails">
-            <div className="content-pokemon">
-                <img class="pokemon" src="https://pa1.narvii.com/6408/8f70cbd230e46497ba9834e492694347ce9c7b87_hq.gif" alt=""></img>
-            </div>
+        <div className={isPikachu === true ? "CardDetails details-pikachu" : "CardDetails"}>
+            {detailsPokemons !== null && (
+                <>
 
-            <div className="CardDetails-items">
-                <h2>{urlDetails}</h2>
-                <p></p>
-                <ul>
-                    <li>HP - 999</li>
-                    <li>MP - 999</li>
-                    <li>types[].type.name</li>
-                    <li>MAGIC-ATACK - 255</li>
-                </ul>
-            </div>
+                    <div className="content-pokemon">
+                        <img className="pokemon" src={detailsPokemons.sprites.other['official-artwork'].front_default} alt=""></img>
+                    </div>
+
+                    <div className="CardDetails-items">
+                        <h2>{detailsPokemons.id} - {detailsPokemons.name}</h2>
+                        <p>types:</p>
+                        {detailsPokemons.types.map((type, i) => {
+                            return (
+                                <p key={i}>{type.type.name}</p>
+                            )
+                        })}
+                        <p>state:</p>
+                        {detailsPokemons.stats.map(
+                            (stat, i) => {
+                                return (
+                                    <p key={i}> {stat.base_stat} - {stat.stat.name}</p>
+                                )
+                            })}
+
+                    </div>
+                </>
+            )}
         </div>
 
     )

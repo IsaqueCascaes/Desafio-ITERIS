@@ -26,10 +26,12 @@ const PokemonList = ({ url, setUrl, urlDetails }) => {
   return (
     <div className="CardMenu">
       <div className="CardMenu-items">
-        <h1>Pokemons</h1>
+        <div className="CardMenu-title">
+          <h1>Pokemons</h1>
+        </div>
         {NomePokemons.map(NomePokemons => {
           return (
-            <div onClick= {()=>{urlDetails(NomePokemons.url)}}>
+            <div key={NomePokemons.url} onClick={() => { urlDetails(NomePokemons.url) }}>
               <span>{NomePokemons.name}</span>
             </div>
 
@@ -37,7 +39,7 @@ const PokemonList = ({ url, setUrl, urlDetails }) => {
         })}
       </div>
 
-{/* 2 */}
+      {/* 2 */}
       <Buttons setUrl={setUrl} next={controlUrl.next} preview={controlUrl.preview} />
 
     </div>
