@@ -33,7 +33,7 @@ body {
 }
 
 .CardMenu-title {
-
+ width:1px;
 }
 
 .CardMenu-content-title {
@@ -47,6 +47,10 @@ font-weight: bold;
   border-radius: 5px;
   width: 35vw;
   height: 70vh;
+}
+
+.details-pikachu {
+  background-color: yellow !important;
 }
 
 .content-pokemon {
