@@ -17,7 +17,7 @@
   
 ## `npm install`
 
-<p>Após você dar o "npm start" na sua máquina, escreva:</p>
+<p>Após você dar o "npm install" na sua máquina, escreva:</p>
 
 ## `npm start`
 
