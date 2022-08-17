@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(https://wallpapercave.com/wp/wp8813200.jpg);
+}
+
+.Titulo {
+  width: 30%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.Cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.CardMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: gray;
+  font-family: 'Silkscreen', cursive;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 35vw;
+  height: 69vh;
+}
+
+.CardMenu-title {
+
+}
+
+.CardMenu-content-title {
+font-weight: bold;
+}
+
+.CardDetails {
+  background-color: gray;
+  font-family: 'Silkscreen', cursive;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 35vw;
+  height: 70vh;
+}
+
+.content-pokemon {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon {
+  width: 70%;
+}
+
+.buttons {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-back {
+
+  background-color: grey;
+  font-family: 'Silkscreen', cursive;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 20vw;
+  height: 5vh;
+
+}
+
+.button-next {
+  background-color: gray;
+  font-family: 'Silkscreen', cursive;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 20vw;
+  height: 5vh;
+}
