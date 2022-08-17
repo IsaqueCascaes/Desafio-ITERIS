@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: #fff;
   box-sizing: border-box;
   background-image: url(https://wallpapercave.com/wp/wp8813200.jpg);
 }
@@ -19,6 +20,8 @@ body {
   justify-content: space-evenly;
 }
 
+
+
 .CardMenu {
   display: flex;
   flex-direction: column;
@@ -28,29 +31,86 @@ body {
   font-family: 'Silkscreen', cursive;
   border: solid 1px black;
   border-radius: 5px;
-  width: 35vw;
-  height: 69vh;
+  width: 30vw;
+  height: 84vh;
 }
 
-.CardMenu-title {
- width:1px;
+.name-pokemons {
+  cursor: pointer;
+}
+
+ul li::marker {
+  color: rgb(154, 154, 154);
 }
 
 .CardMenu-content-title {
-font-weight: bold;
+  font-weight: bold;
 }
 
 .CardDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1em;
   background-color: gray;
   font-family: 'Silkscreen', cursive;
   border: solid 1px black;
   border-radius: 5px;
   width: 35vw;
-  height: 70vh;
+  height: 84vh;
+}
+
+.content-pokemon img {
+  width: 40%;
+}
+
+.CardDetails-items p {
+  color: rgb(62, 59, 59);
+  height: 2px;
+}
+
+.types {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.types li {
+  border: solid 1px black;
+  display: flex;
+}
+
+.container {
+  width: 20em;
+  height: 20px;
+  background-color: #CCC;
+  position: static;
+}
+
+.container .progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg,
+      hsl(129, 74%, 60%) 35%,
+      rgb(8, 234, 1) 100%);
+  animation: progress-animation 7s infinite;
+
+}
+
+@keyframes progress-animation {
+  70% {
+    width: 70%;
+  }
+
+  100% {
+    width: 100%
+  }
 }
 
 .details-pikachu {
-  background-color: yellow !important;
+  background-image: url(https://s2.favim.com/orig/28/cute-gif-pikachu-pokemon-Favim.com-237865.gif) !important;
+  background-size: 100%;
 }
 
 .content-pokemon {
@@ -65,25 +125,112 @@ font-weight: bold;
 .buttons {
   width: 30%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  padding-top: 1em;
 }
 
 .button-back {
-
+  color: #fff;
   background-color: grey;
   font-family: 'Silkscreen', cursive;
   border: solid 1px black;
   border-radius: 5px;
   width: 20vw;
   height: 5vh;
-
+  cursor: pointer;
 }
 
 .button-next {
+  color: #fff;
   background-color: gray;
   font-family: 'Silkscreen', cursive;
   border: solid 1px black;
   border-radius: 5px;
   width: 20vw;
   height: 5vh;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .Titulo {
+    width: 70%;
+
+  }
+
+  .name-pokemons {
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+  }
+
+  .name {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CardMenu {
+    width: 80%;
+  }
+
+  .CardDetails {
+    width: 80%;
+    height: 82vh;
+  }
+
+  .CardDetails-items {
+    align-items: center;
+    font-size: small;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container .progress-bar {
+    animation: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .Titulo {
+    width: 70%;
+  }
+
+  .name-pokemons {
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+  }
+
+  .name {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CardMenu {
+    width: 80%;
+    height: 83vh;
+  }
+
+  .CardDetails {
+    width: 80%;
+    height: 82vh;
+  }
+
+  .CardDetails-items {
+    align-items: center;
+    font-size: small;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .container .progress-bar {
+    animation: none;
+  }
 }

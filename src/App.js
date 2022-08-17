@@ -7,7 +7,7 @@ import PokemonList from './components/PokemonList';
 function App() {
 
   //1
-  const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=15')
+  const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=13')
   const [urlDetails, setUrlDetails] = useState(null)
 
   return (

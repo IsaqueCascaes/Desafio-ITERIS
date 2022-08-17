@@ -35,22 +35,27 @@ const CardDetails = ({ urlDetails }) => {
                 <>
 
                     <div className="content-pokemon">
-                        <img className="pokemon" src={detailsPokemons.sprites.other['official-artwork'].front_default} alt=""></img>
+                        <img src={detailsPokemons.sprites.other['official-artwork'].front_default} alt=""></img>
                     </div>
 
                     <div className="CardDetails-items">
-                        <h2>{detailsPokemons.id} - {detailsPokemons.name}</h2>
-                        <p>types:</p>
+                        <h2 className="name">{detailsPokemons.id} - {detailsPokemons.name}</h2>
                         {detailsPokemons.types.map((type, i) => {
                             return (
-                                <p key={i}>{type.type.name}</p>
+                                <div className="types">
+                                    <span key={i}>{type.type.name}</span>
+                                </div>
                             )
                         })}
                         <p>state:</p>
                         {detailsPokemons.stats.map(
                             (stat, i) => {
                                 return (
-                                    <p key={i}> {stat.base_stat} - {stat.stat.name}</p>
+                                    <div className="container">
+                                        <div className="progress-bar">
+                                            <p key={i}> {stat.stat.name} - {stat.base_stat}</p>
+                                        </div>
+                                    </div>
                                 )
                             })}
 
