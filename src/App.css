@@ -16,6 +16,7 @@ body {
 .Cards {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content: space-evenly;
 }
 
@@ -24,11 +25,19 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+=======
+  justify-content:space-evenly;
+}
+
+.CardMenu {
+
+>>>>>>> 886ffe562dd4dc289bf5a8638961355784f56494
   background-color: gray;
   font-family: 'Silkscreen', cursive;
   border: solid 1px black;
   border-radius: 5px;
   width: 35vw;
+<<<<<<< HEAD
   height: 69vh;
 }
 
@@ -38,6 +47,9 @@ body {
 
 .CardMenu-content-title {
 font-weight: bold;
+=======
+  height: 70vh;
+>>>>>>> 886ffe562dd4dc289bf5a8638961355784f56494
 }
 
 .CardDetails {
@@ -50,14 +62,27 @@ font-weight: bold;
 }
 
 .content-pokemon {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
+=======
+display: flex;
+justify-content: center;
+>>>>>>> 886ffe562dd4dc289bf5a8638961355784f56494
 }
 
 .pokemon {
   width: 70%;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 886ffe562dd4dc289bf5a8638961355784f56494
 .buttons {
   width: 30%;
   display: flex;
@@ -65,12 +90,21 @@ font-weight: bold;
 }
 
 .button-back {
+<<<<<<< HEAD
 
   background-color: grey;
   font-family: 'Silkscreen', cursive;
   border: solid 1px black;
   border-radius: 5px;
   width: 20vw;
+=======
+  
+background-color: grey;
+  font-family: 'Silkscreen', cursive;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 10vw;
+>>>>>>> 886ffe562dd4dc289bf5a8638961355784f56494
   height: 5vh;
 
 }
@@ -80,6 +114,10 @@ font-weight: bold;
   font-family: 'Silkscreen', cursive;
   border: solid 1px black;
   border-radius: 5px;
+<<<<<<< HEAD
   width: 20vw;
+=======
+  width: 10vw;
+>>>>>>> 886ffe562dd4dc289bf5a8638961355784f56494
   height: 5vh;
 }

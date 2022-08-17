@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect } from "react";
 
 
@@ -6,6 +7,9 @@ const CardDetails = ({ urlDetails }) => {
         console.log(urlDetails)
     }, [urlDetails])
 
+=======
+const CardDetails = () => {
+>>>>>>> 886ffe562dd4dc289bf5a8638961355784f56494
     return (
 
         <div className="CardDetails">
@@ -14,12 +18,21 @@ const CardDetails = ({ urlDetails }) => {
             </div>
 
             <div className="CardDetails-items">
+<<<<<<< HEAD
                 <h2>{urlDetails}</h2>
                 <p></p>
                 <ul>
                     <li>HP - 999</li>
                     <li>MP - 999</li>
                     <li>types[].type.name</li>
+=======
+                <h2>Charizard</h2>
+                <p>Dark</p>
+                <ul>
+                    <li>HP - 999</li>
+                    <li>MP - 999</li>
+                    <li>POWER-ATACK - 212</li>
+>>>>>>> 886ffe562dd4dc289bf5a8638961355784f56494
                     <li>MAGIC-ATACK - 255</li>
                 </ul>
             </div>

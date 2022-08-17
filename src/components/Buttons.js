@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const Buttons = ({setUrl, next, preview}) => {
 
     return (
@@ -11,3 +12,15 @@ const Buttons = ({setUrl, next, preview}) => {
 };
 export default Buttons;
 //
+=======
+const Buttons = () => {
+    return (
+    <div className="buttons">
+        <button className="button-back">Back</button>
+        <button className="button-next">Next</button>
+    </div>
+    )
+}
+
+export default Buttons;
+>>>>>>> 886ffe562dd4dc289bf5a8638961355784f56494
