@@ -14,6 +14,7 @@
 # Rodando o Projeto:
 
 <p>Antes de você dar o "npm start" no seu terminal, certifique se você baixou a bibioteca utilizando o:</p>
+  
 ## `npm install`
 
 <p>Após você dar o "npm start" na sua máquina, escreva:</p>
