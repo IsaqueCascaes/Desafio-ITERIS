@@ -3,7 +3,7 @@
 
 <p>Este projeto foi realizado utilizando as seguintes ferramentas: HTML, CSS, JavaScript e React para o processo seletivo da empresa Iteris Inc.</p>
 
-## Descrição do Projeto :
+## Descrição do Projeto:
 
 <p>Projeto Concluído para processo seletivo realizado da empresa Iteris Inc. A pokedex é uma enciclopédia virtual que acompanha os Pokémon que você viu e capturou. Com o objetivo de criar algo semelhante, criei uma Pokedex para que o usuário tenha a experiência similar ao do utilizado no jogo, desenho, Pokemon.</p>
 
